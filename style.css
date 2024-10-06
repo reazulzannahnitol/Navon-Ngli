@@ -1,0 +1,1007 @@
+/* Global Styles */
+html, body {
+    font-family: 'Georgian', sans-serif;
+    color: #333;
+    
+}
+
+/* AOS Animation Styling */
+[data-aos] {
+    transition: all 0.5s ease; /* Smooth transition */
+}
+
+/*All Section Title Styling */
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #04b5c9;
+    margin-bottom: 10px;
+    padding-top: 22px;
+    text-align: center;
+}
+
+/* Horizontal line under the headline */
+.section-hr {
+    width: 60px;
+    height: 4px;
+    background-color: #e0202b;
+    border: none;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.headline-underline{
+    width: 60px;
+    height: 4px;
+    background-color: #eb5204;
+}
+
+
+
+
+/* Desktop navigation links styles */
+.navbar-nav .nav-link {
+    font-weight:900; /* Make the text bold */
+    font-size: 20px; /* Increase font size (adjust as needed) */
+    color: #39a1ac !important;
+}
+.nav-link:hover {
+    color:#e0202b !important;
+}
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it stays on top of other content */
+    background-color: #ffffffc2!important;
+    border-bottom: 4px solid #33dbeb;
+}
+/* Phone icon styles */
+.navbar-phone-icon {
+    color: #056579; /* Initial color */
+    font-size: 24px; /* Size of the icon */
+    margin-right: auto; /* Pushes the icon to the far left */
+}
+
+/* Logo styles */
+.navbar-brand {
+    display: flex;
+    justify-content: center; /* Center the logo */
+}
+
+/* Toggle button styles */
+.navbar-toggler {
+    margin-left: auto; /* Pushes the toggle button to the far right */
+}
+
+/* Hover effect for the phone icon */
+.navbar-phone-icon:hover {
+    color: #eb5204; /* Color on hover */
+}
+
+/* Mobile view adjustments */
+@media (max-width: 992px) {
+    .navbar .container {
+        display: flex;
+        justify-content: space-between; /* Space between elements */
+        align-items: center; /* Align items vertically */
+    }
+
+    /* Order of elements in mobile view */
+    .navbar-toggler {
+        order: 3; /* Toggle button goes last */
+    }
+
+    .navbar-phone-icon {
+        order: 1; /* Phone icon first */
+        display: flex;
+        align-items: center; /* Center vertically */
+        margin-left: 7px;
+    }
+
+    .navbar-brand {
+        order: 2; /* Logo goes second */
+        margin: 0;
+        text-align: center; /* Center text */
+    }
+
+    /* Overlay for mobile menu */
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        display: none; /* Hidden by default */
+    }
+
+    /* Show overlay when navbar is open */
+    .navbar-mobile.open ~ .overlay {
+        display: block; /* Show overlay */
+    }
+}
+
+/* Mobile navigation styles */
+.navbar-mobile {
+    position: fixed; /* Fixed position for mobile navbar */
+    top: 0;
+    right: -250px; /* Initially off-screen */
+    width: 250px; /* Width of mobile navbar */
+    height: 100%; /* Full height */
+    background-color: #009191d7; /* Background color */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    transition: right 0.3s ease; /* Smooth slide-in effect */
+    z-index: 1001; /* Above overlay */
+}
+
+/* Mobile navbar list styles */
+.navbar-mobile ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.navbar-mobile li {
+    margin: 15px 0; /* Space between items */
+    margin-left: 18px;
+}
+
+.navbar-mobile a {
+    text-decoration: none; /* Remove underline */
+    color: #ffffff; /* Text color */
+    font-weight: bold; /* Bold text */
+}
+/* Hover effect for mobile navigation links */
+.navbar-mobile a:hover {
+    color: #eb5204; /* Change color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+/* Social icons styles */
+.social-icons {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center icons */
+    margin-top: 20px; /* Space above icons */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Space between icons */
+    font-size: 18px; /* Icon size */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.social-icons a:hover {
+    color: #eb5204; /* Color on hover */
+}
+
+/* Close button styles */
+.close-btn {
+    background: #eb5204; /* Background color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    color: white; /* Text color */
+    font-size: 15px; /* Font size */
+    cursor: pointer; /* Pointer on hover */
+    padding: 5px 10px; /* Padding */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center the icon */
+    align-items: center; /* Center the icon vertically */
+    margin-bottom: 20px; /* Space below */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+    margin-top: 40px;
+    margin-left: 18px;
+}
+
+.close-btn:hover {
+    background: #056579; /* Change background on hover */
+}
+.nav-description {
+    font-size: 12px; /* Adjust size as needed */
+    color: #ffffff; /* Text color (change if needed) */
+    margin: 5px 0 15px; /* Space around the text */
+    line-height: 1.4; /* Adjust line height for readability */
+}
+
+
+
+
+
+
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+}
+
+.hero-section .btn-primary {
+    background-color: #1a689e;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.hero-section .btn-primary:hover {
+    background-color:  #33dbeb;
+}
+
+
+
+@media (max-width: 768px) {
+    #about .row {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    #about .row img {
+        order: 1; /* Image comes first */
+    }
+
+    #about .row .col-md-6 {
+        order: 2; /* Text comes after the image in mobile */
+    }
+}
+/* Remove borders and hover effects from the video */
+video {
+    border: none;          /* No border */
+    outline: none;         /* No outline */
+    transition: none;      /* Disable any transition effects */
+    box-shadow: none;      /* Remove shadow if any */
+}
+
+/* Disable any hover effect */
+video:hover {
+    border: none;          /* No border on hover */
+    outline: none;         /* No outline on hover */
+    transform: none;       /* Prevent any hover animations */
+    box-shadow: none;      /* No shadow on hover */
+}
+
+
+
+
+
+.invest-table td {
+    border: 0.5px solid #000000; /* Border color and size for each cell */
+   
+}
+/* Style for smaller headings and icons */
+.invest-heading {
+    font-size: 1.2rem; /* Smaller heading size */
+    font-weight: bold; /* Keep bold for emphasis */
+}
+
+
+
+
+
+
+
+
+/* Courses Offered Section */
+#courses-offered {
+    position: relative;
+}
+
+.course-image {
+    position: relative;
+    height: 250px; /* Set a fixed height */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center vertically */
+}
+
+/* Align the info to the left */
+.course-info {
+    position: absolute;
+    left: 10px; /* Align to left */
+    color: white;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5); /* Dark background for readability */
+    border-radius: 5px;
+    width: 50%; /* Set a width to ensure it doesn't take the entire space */
+}
+
+.course-info h3 {
+    margin: 0;
+    font-size: 1.5em; /* Adjusted heading size */
+}
+
+.course-info p {
+    margin-top: 5px;
+    font-size: 1em; /* Adjusted paragraph size */
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .course-image {
+        height: 200px; /* Adjust height for mobile */
+    }
+
+    .course-info {
+        left: 10px; /* Keep on left */
+        bottom: 10px; /* Align to bottom */
+        padding: 10px;
+        width: 60%; /* Ensure it stays on the left */
+    }
+
+    .course-info h3 {
+        font-size: 1.2em; /* Smaller heading size */
+    }
+
+    .course-info p {
+        font-size: 0.9em; /* Smaller paragraph size */
+    }
+}
+
+
+  
+
+
+
+  
+  
+
+
+#specialized-programs .section-title {
+    font-size: 2.5rem;
+    color: #1a689e;
+    font-weight: 700;
+}
+
+#specialized-programs .program-card {
+    border: 3px solid #39a1ac;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    overflow: hidden; /* Prevents content from overflowing */
+    transition: all 0.4s ease;
+}
+
+#specialized-programs .program-card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+    border-color: #33dbeb;
+}
+
+#specialized-programs .card-title {
+    font-size: 1.5rem;
+    color: #1a689e;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#specialized-programs .card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+#specialized-programs .program-icon {
+    width: 100%; /* Ensures the image scales within the card */
+    max-width: 266px; /* Adjust max size to ensure it looks good on all screen sizes */
+    height: auto;
+    border-radius: 50%;
+    background-color: #33dbeb;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+#specialized-programs .card-body {
+    padding: 30px;
+}
+
+@media (max-width: 768px) {
+    #specialized-programs .section-title {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+#comprehensive-curriculum .section-title {
+    font-size: 2.5rem;
+    color: #1a689e;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#comprehensive-curriculum .section-hr {
+    width: 50px;
+    height: 4px;
+    background-color: #33dbeb;
+    margin: 0 auto 2rem;
+}
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border: 3px solid #39a1ac;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    padding: 15px;
+}
+
+.timeline-item:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+    border-color: #33dbeb;
+}
+
+.timeline-icon {
+    width: 25%; /* Fixed 25% width for the image */
+    padding: 10px;
+    margin-right: 15px;
+}
+
+.timeline-icon img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.timeline-content {
+    width: 75%; /* Fixed 75% width for the text */
+}
+
+.timeline-content h4 {
+    font-size: 1.5rem;
+    color: #1a689e;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Adjusting the layout for smaller screens */
+@media (max-width: 768px) {
+    .timeline-item {
+        flex-direction: row; /* Maintain row layout on mobile */
+        flex-wrap: nowrap; /* Ensure content doesn't wrap */
+    }
+
+    .timeline-icon {
+        width: 25%; /* Ensure the image takes 25% of the width on mobile */
+        margin-right: 15px;
+    }
+
+    .timeline-content {
+        width: 75%; /* Ensure the text takes 75% of the width on mobile */
+    }
+}
+
+
+
+
+
+
+
+
+/* CSR Section Styling */
+.csr-section {
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.section-title {
+    font-size: 2.5rem; /* Reduced from 2.8rem */
+    color: #1a689e;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Diagonal Card Style */
+.csr-diagonal-card {
+    background: linear-gradient(135deg, #33dbeb 50%, #fff 50%);
+    border-radius: 10px; /* Reduced border radius */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+    border: 3px solid #33dbeb;
+    padding: 20px; /* Reduced padding */
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.csr-diagonal-card:hover {
+    transform: translateY(-5px); /* Reduced hover effect */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.csr-diagonal-icon {
+    width: 20%; /* Reduced width */
+    margin-right: 10px; /* Reduced margin */
+    text-align: center;
+}
+
+.csr-diagonal-icon img {
+    max-width: 80%; /* Adjusted to fit smaller size */
+    height: auto;
+}
+
+.csr-diagonal-content {
+    width: 75%; /* Kept the same for layout */
+}
+
+.csr-diagonal-content h4 {
+    font-size: 1.5rem; /* Reduced heading size */
+    color: #1a689e;
+    margin-bottom: 5px; /* Reduced margin */
+}
+
+.csr-diagonal-content p {
+    font-size: 1rem; /* Reduced paragraph size */
+    color: #555;
+}
+
+/* Adjust for mobile view */
+@media (max-width: 768px) {
+    .csr-diagonal-card,
+    .csr-straight-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .csr-diagonal-icon {
+        width: 100%;
+        margin-bottom: 10px; /* Reduced margin */
+    }
+
+    .csr-diagonal-content {
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* How It Works Section Styling */
+.how-it-works-section {
+    background-color: #f0f4f8;
+    border-top: 4px solid #33dbeb;
+}
+
+/* Card Styles */
+.how-it-works-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #e0e0e0;
+    height: 100%;  /* Ensures all cards take up equal height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.how-it-works-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.how-it-works-icon {
+    color: #33dbeb;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-weight: bold;  /* Makes the heading bold */
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .how-it-works-card {
+        padding: 15px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+#our-sister-company {
+    padding: 50px 0;
+  }
+  
+  .section-title {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .section-hr {
+    width: 100px;
+    height: 3px;
+    background-color: #056579;
+    margin: 0 auto 40px;
+  }
+  
+  #our-sister-company h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #056579;
+  }
+  
+  #our-sister-company p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  #our-sister-company img {
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Add shadow */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  #our-sister-company .zoom-on-hover:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+  }
+  
+  #our-sister-company a {
+    display: block;
+  }
+  
+  /* Mobile Adjustments */
+  @media (max-width: 768px) {
+    #our-sister-company .row {
+      text-align: center;
+    }
+    
+    #our-sister-company .order-md-2 {
+      order: 1;
+    }
+    
+    #our-sister-company img {
+      margin-top: 20px;
+    }
+  }
+  @media (max-width: 767.98px) {
+    /* For mobile view, change the order of elements for the "Navon Study International" section */
+    #our-sister-company .order-md-1 {
+      order: 2; /* Place image after the text in mobile view */
+    }
+    
+    #our-sister-company .order-md-2 {
+      order: 1; /* Place text before the image in mobile view */
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+/* Blog Section Styles */
+
+.blog-post-img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.blog-posts-row {
+    padding: 10px;
+}
+
+.blog-post-img:hover {
+    transform: scale(1.05);
+}
+
+.blog-post-title {
+    color: #E0202B;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.blog-post-text {
+    color: #333;
+    font-size: 16px;
+}
+
+/* Light fade border between blog posts */
+.blog-post {
+    padding: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+/* Make Blog Responsive */
+@media (max-width: 768px) {
+    .blog-post-title {
+        font-size: 1.25rem;
+    }
+
+    .blog-post-text {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Team Section */
+#meet-our-team {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #056579;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 20px;
+    flex: 1 1 200px; /* Flexbox for responsive sizing */
+    box-sizing: border-box; /* Ensures padding/margin do not affect width */
+}
+
+.team-member img {
+    width: 70%; /* Full width of container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 5px solid #33dbeb; /* Round border with specified color */
+}
+
+.team-member h4 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Responsive Layout for Mobile */
+@media (max-width: 768px) {
+    .team-member {
+        flex: 1 1 calc(50% - 10px); /* 50% width minus margin */
+        margin-right: -70px; /* Add right margin for spacing */
+    }
+    .team-member img {
+        width: 70%; /* Full width of container */
+    }
+    
+    .team-member:nth-child(2n) {
+        margin-right: 0; /* Remove margin for every second item */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #1a689e;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    /* Responsive Font Sizes */
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+/* Testimonials Section */
+
+
+.testimonial-card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+}
+
+.testimonial-card .testimonial-image-placeholder {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    border-bottom: 5px solid #33dbeb;
+}
+
+.testimonial-card .card-body {
+    padding: 20px;
+    color: #333;
+}
+
+.testimonial-card .card-title {
+    color: #e0202b;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.testimonial-card .card-text {
+    font-style: italic;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .testimonial-card {
+        margin-bottom: 30px;
+    }
+    
+    #testimonials h2 {
+        font-size: 2rem;
+    }
+    
+    .testimonial-card .card-title {
+        font-size: 1.1rem;
+    }
+    
+    .testimonial-card .card-text {
+        font-size: 0.95rem;
+    }
+}
+
+
+
+
+
+
+
+.contact-bg {
+    position: relative; /* Positioning for the overlay */
+    background-image: url('bg 4.png'); /* Replace with your background image URL */
+    background-color: #006871;
+    background-size: 30%; /* Adjust the size of the background image */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    padding: 60px 0; /* Adjust padding for better spacing */
+    color: white; /* Change text color to white for better contrast */
+    overflow: hidden; /* Hide any overflow from the overlay */
+}
+
+.info-box {
+    background-color: rgba(0, 0, 0, 0.3); /* Transparent background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Padding around the text */
+    text-align: center; /* Center text within the box */
+    margin: 0 auto; /* Center the box within the column */
+    max-width: 600px; /* Set a max width for the box */
+    color: white; /* Set text color */
+}
+
+/* Adjust links color */
+.info-box a {
+    color: #e5fa00; /* Link color */
+}
+
+
+
+/* Ensure form elements have a transparent background to show the image */
+.form-control {
+    
+    border: 1px solid #ced4da;
+}
+
+/* Optional: Add media queries for responsive adjustments */
+@media (max-width: 768px) {
+    .contact-bg {
+        background-size: 70%; /* Make the background image full size on mobile */
+    }
+    
+
+    h2 {
+        font-size: 1.5rem; /* Adjust heading size for mobile */
+    }
+
+    .form-control {
+        font-size: 0.9rem; /* Adjust font size for inputs */
+    }
+
+    .btn-primary {
+        font-size: 0.9rem; /* Adjust button font size for mobile */
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-bg {
+        padding: 30px 0; /* Reduce padding for extra small screens */
+    }
+
+    h2 {
+        font-size: 1.25rem; /* Further adjust heading size for smaller screens */
+    }
+}

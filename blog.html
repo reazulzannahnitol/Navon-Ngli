@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navon Global Languages Institute</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap" rel="stylesheet">
+      <!-- Font Awesome CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-navbar">
+    <div class="container d-flex justify-content-between align-items-center">
+        <!-- Phone Call Icon (Visible in Mobile View Only) -->
+        <a href="tel:+94777809550" class="navbar-phone-icon d-lg-none">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+
+        <!-- Centered Logo -->
+        <a class="navbar-brand mx-auto" href="index.html">
+            <img src="logo.png" alt="Navon Global Language Institute" style="height: 55px;">
+        </a>
+
+        <!-- Toggle Button for Mobile Navigation -->
+        <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="openNav()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible Navbar Links for Desktop View -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="about us.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#universities-offer">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">NGLI Blogs</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonial-section">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="#unique-gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+            <div class="navbar-nav">
+                <a class="nav-link" href="https://www.instagram.com/navonstudyinternational"><i class="fab fa-instagram"></i></a>
+                <a class="nav-link" href="https://www.facebook.com/profile.php?id=61563054991331"><i class="fab fa-facebook"></i></a>
+                <a class="nav-link" href="https://www.linkedin.com/company/navonstudyinternational"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Navigation Bar -->
+<nav class="navbar-mobile">
+    <div class="navbar-content">
+        <!-- Close Button -->
+        <button class="close-btn" onclick="closeNav()">&times;</button>
+        
+        <!-- Mobile Navbar Links -->
+        <ul>
+            <li>
+                <a href="about us.html">About</a>
+                <p class="nav-description">Learn more about our mission and values.</p>
+            </li>
+            <li>
+                <a href="#universities-offer">Services</a>
+                <p class="nav-description">Explore the services we offer to our students.</p>
+            </li>
+            <li>
+                <a href="#testimonial-section">Testimonials</a>
+                <p class="nav-description">See what our students have to say about us.</p>
+            </li>
+            <li>
+                <a href="#unique-gallery">Gallery</a>
+                <p class="nav-description">Check out our gallery of events and activities.</p>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+                <p class="nav-description">Get in touch with us for more information.</p>
+            </li>
+        </ul>
+
+        <!-- Social Icons -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/navonstudyinternational"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61563054991331"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/company/navonstudyinternational"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</nav>
+
+<!-- Overlay for Dark Background when Mobile Navbar is Open -->
+<div class="overlay" onclick="closeNav()"></div>
+
+
+
+
+
+
+
+<div class="container">
+    <section id="news-blogs-section" class="container py-5">
+        <h2 class="text-center mb-4 section-title-blogs">News & Blogs</h2>
+        <hr class="section-hr-blogs">
+
+        <div class="row blog-posts-row">
+            <!-- Blog Post 1 -->
+            <div class="col-md-6 mb-4 blog-post">
+                <a href="blog 3.jpeg" target="_blank">
+                    <img src="blog 3.jpeg" class="img-fluid blog-post-img zoom-on-hover-blog" alt="Blog Post 1">
+                </a>
+                <h3 class="blog-post-title">A Message From Founder & CEO</h3>
+                <p class="blog-post-text">Georgiana Mart, The CEO who's vision is to create a borderless world.</p>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="col-md-6 mb-4 blog-post">
+                <a href="blog 4.png" target="_blank">
+                    <img src="blog 4.png" class="img-fluid blog-post-img zoom-on-hover-blog" alt="Blog Post 2">
+                </a>
+                <h3 class="blog-post-title">Find Out Top Spoken Languages</h3>
+                <p class="blog-post-text">Take a Peek To Widely Spoken Languages In The World Right Now.</p>
+            </div>
+
+            <!-- Blog Post 3 -->
+            <div class="col-md-6 mb-4 blog-post">
+                <a href="blog 1.jpg" target="_blank">
+                    <img src="blog 1.jpg" class="img-fluid blog-post-img zoom-on-hover-blog" alt="Blog Post 3">
+                </a>
+                <h3 class="blog-post-title">Opportunities To The World</h3>
+                <p class="blog-post-text">Enhance your career opportunities with our language courses, designed to support your Abroad aspirations.</p>
+            </div>
+
+            <!-- Blog Post 4 -->
+            <div class="col-md-6 mb-4 blog-post">
+                <a href="blog 2.jpg" target="_blank">
+                    <img src="blog 2.jpg" class="img-fluid blog-post-img zoom-on-hover-blog" alt="Blog Post 4">
+                </a>
+                <h3 class="blog-post-title">5 Reasons To Study At NGLI</h3>
+                <p class="blog-post-text">Find Out The Top Five Reasons To Apply With Us.</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Scripts -->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+   <script>
+       AOS.init({
+           duration: 1200,
+       });
+   </script>
+   <script>
+       function openNav() {
+           document.querySelector('.navbar-mobile').style.right = '0';
+           document.querySelector('.overlay').style.display = 'block';
+       }
+     
+       function closeNav() {
+           document.querySelector('.navbar-mobile').style.right = '-250px';
+           document.querySelector('.overlay').style.display = 'none';
+       }
+     
+       // Function to close mobile navbar when clicking a link
+       document.querySelectorAll('.navbar-mobile a').forEach(link => {
+           link.addEventListener('click', () => {
+               closeNav();
+           });
+       });
+     </script>
+   <script src="scripts.js"></script>
+
+</body>
